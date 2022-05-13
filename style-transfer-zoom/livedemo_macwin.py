@@ -6,7 +6,7 @@ from stylenet import StyleNetwork
 from torchvision import transforms as T
 
 
-net=StyleNetwork('./style_7.pth')
+net=StyleNetwork('./models/style_7.pth')
 
 for p in net.parameters():
     p.requires_grad=False
